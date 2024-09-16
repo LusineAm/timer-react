@@ -2,6 +2,14 @@
 
 This project is a simple timer with a visual progress circle and basic controls (Start, Pause, Reset). It supports tracking elapsed time, displaying progress as a percentage, and formatting time into minutes and seconds.
 
+## Demo
+
+Check out the live demo of the project
+
+```
+https://timer-react-theta.vercel.app/
+```
+
 ## Features
 
 - Countdown timer with a maximum duration of 59 minutes and 59 seconds.
