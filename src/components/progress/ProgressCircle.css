@@ -1,0 +1,45 @@
+.progress {
+  --size: 80%;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: conic-gradient(
+    #67cb88 calc(var(--progress) * 1%),
+    #545576 calc(var(--progress) * 1%)
+  );
+  display: grid;
+  place-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.progress-content {
+  width: calc(var(--size) * 0.999);
+  aspect-ratio: 1;
+  background: #26273d;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.completed {
+  background: #26273d;
+  animation: alternating-colors 1s linear infinite;
+}
+
+@keyframes alternating-colors {
+  0% {
+    background-color: #67cb88;
+  }
+  50% {
+    background-color: #cb6767;
+  }
+  100% {
+    background-color: #67cb88;
+  }
+}
